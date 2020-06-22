@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL to Google Drive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="index.css" rel="stylesheet"> 
+</head>
+<body>
+	<div class="login">
+	  <div class="login-triangle"></div>
+	  <h2 class="login-header">Google Drive Direct Download Link</h2>
+	  <div class="login-container" id="form-cont">
+	    <p><input type="text" placeholder="URL" name="URL"></p>
+	    <p><input type="submit" value="Submit" onclick="SubmitForm()"></p>
+        <p id="dlink" class="dlink"></p>
+	  </div>
+	</div>
+ 	<script>
+ 		function SubmitForm(){
+	 		var container = document.getElementById('form-cont');
+	 		var url = container.querySelector('[name="URL"]').value;
+            var id = "https://drive.google.com/uc?id=" + url.split("/")[5] + "&export=download";
+            var element = document.createElement('a');
+            element.setAttribute('class', 'button');
+            element.setAttribute('href', id.toString());
+            element.innerHTML = "Download";
+            document.getElementById("dlink").appendChild(element);
+ 		}
+ 	</script>
+</body>
+</html>
