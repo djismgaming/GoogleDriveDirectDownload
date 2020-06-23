@@ -10,6 +10,7 @@
 	<div class="login">
 	  <div class="login-triangle"></div>
 	  <h2 class="login-header">Google Drive Direct Download Link</h2>
+      <p>Just paste the sharing link of Google Drive file then download the file by clicking "Download" button</p>
 	  <div class="login-container" id="form-cont">
 	    <p><input type="text" placeholder="URL" name="URL"></p>
 	    <p><input type="submit" value="Submit" onclick="SubmitForm()"></p>
@@ -26,6 +27,12 @@
             element.setAttribute('href', id.toString());
             element.innerHTML = "Download";
             document.getElementById("dlink").appendChild(element);
+
+            var element2 = document.createElement('a');
+            element2.setAttribute('class', 'button');
+            element2.setAttribute('href', "https://paytm.me/O-7Da85");
+            element2.innerHTML = "Loved it!";
+            document2.getElementById("dlink").appendChild(element2);
  		}
  	</script>
 </body>
