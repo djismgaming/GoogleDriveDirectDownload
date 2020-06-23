@@ -1,4 +1,4 @@
-body {
+    body {
     background: #456;
     font-family: 'Quicksand', sans-serif;
     height: auto;
@@ -18,9 +18,10 @@ body {
     padding: 8px;
     font-size: 1.1em;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 .dlink {
-    padding: auto;
+    padding: 10px;
     text-align: center;
 }
 .login {
@@ -35,15 +36,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-/* The triangle form is achieved by a CSS hack */
-/* 			.login-triangle {
-    width: 0;
-    margin-right: auto;
-    margin-left: auto;
-    border: 12px solid transparent;
-    border-bottom-color: #28d;
-} */
 
 .login-header {
     background: #28d;
